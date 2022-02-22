@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1064187048099",
+    "firebase_url": "https://plantkriya.firebaseio.com",
+    "project_id": "plantkriya",
+    "storage_bucket": "plantkriya.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064187048099:android:5941e543073ce448b34f16",
+        "android_client_info": {
+          "package_name": "com.example.plantkriya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064187048099-31k8auspub4rea5ir583e07g5q9si87i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8kV8nh2YCABolLPNtOTlveEa5uNlGN8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064187048099-31k8auspub4rea5ir583e07g5q9si87i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

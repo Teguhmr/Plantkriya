@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    tools:context=".activity.submissionkriya.DetailSubmissionKriyaActivity">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_rect01">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Detail Submission"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_margin="4dp"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="8dp">
+
+            <!-- LinearLayout goes here -->
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RatingBar
+                        android:id="@+id/rating_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:numStars="5"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginHorizontal="5dp"/>
+                    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                        android:id="@+id/material_pic"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:elevation="4dp"
+                        android:layout_below="@id/rating_bar"
+                        android:layout_centerHorizontal="true"
+                        app:c_border="true"
+                        app:c_border_color="@color/colorAccent"
+                        android:src="@drawable/pp1"
+                        app:c_border_width="1dp"/>
+
+                </RelativeLayout>
+
+
+                <TableRow
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="5dp">
+
+                    <TextView
+                        android:hint="SubmissionID "
+                        android:paddingStart="10dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_submissionId"
+                        android:hint="111909293"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginHorizontal="5dp">
+
+                    <TextView
+                        android:hint="Tanggal "
+                        android:paddingStart="10dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/date_tv"
+                        android:hint="22/4/2001"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginHorizontal="5dp">
+
+                    <TextView
+                        android:hint="Judul "
+                        android:paddingStart="10dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/title_tv"
+                        android:hint="Tanam Bunga"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginHorizontal="5dp">
+
+                    <TextView
+                        android:hint="Kategori "
+                        android:paddingStart="10dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_category_plant"
+                        android:hint="Bunga"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginHorizontal="5dp">
+
+                    <TextView
+                        android:hint="Status "
+                        android:paddingStart="10dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/status_submission_tv"
+                        android:hint="Diproses"
+                        android:textSize="15sp"
+                        android:textColor="@color/blue_active"
+                        android:fontFamily="@font/poppins_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginHorizontal="5dp">
+
+                    <TextView
+                        android:hint="Nama "
+                        android:paddingStart="10dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:hint="Teguhmr"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginHorizontal="5dp">
+
+                    <TextView
+                        android:hint="Email "
+                        android:paddingStart="10dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:hint="teguhmr16@gmail.com"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"/>
+
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/image_submission"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:layout_below="@id/txt_mySubmission"
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginVertical="20dp"
+                    android:src="@drawable/ic_baseline_photo_library_24"
+                    android:scaleType="center"
+                    android:layout_marginHorizontal="40dp"
+                    android:background="@drawable/shape_rect04" />
+
+
+                <TextView
+                    android:id="@+id/tv_reviewer_txt"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Reviewer Note's"/>
+
+                <TextView
+                    android:id="@+id/tv_reviewer_note"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_70sdp"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shape_rect02"
+                    android:layout_width="wrap_content"
+                    android:text="Bagus Sekali"/>
+
+            </TableLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

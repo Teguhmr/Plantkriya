@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/bottomSheetContainer"
+    android:paddingHorizontal="16dp"
+    android:background="@drawable/bottom_sheet_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        android:text="@string/my_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textColorScreen"/>
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        app:c_border="true"
+        app:c_border_color="@color/colorAccent"
+        android:src="@drawable/pp1"
+        app:c_border_width="1dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/name" />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_light"
+        tools:text="@string/dummy_name" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/email" />
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_light"
+        tools:text="@string/dummy_email" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/phone_number" />
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_light"
+        tools:text="@string/dummynumber" />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:textSize="12sp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_update_stroke"
+        android:layout_gravity="center_horizontal"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:text="@string/change" />
+
+</LinearLayout>

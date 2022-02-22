@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_160sdp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:focusable="true"
+    app:cardCornerRadius="8dp"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_90sdp"
+    android:clickable="true"
+    app:cardPreventCornerOverlap="true">
+
+    <!-- Product card layout used in MDC-103 and onward -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:src="@drawable/plant"
+            android:id="@+id/materialIconIv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_180sdp"
+            android:background="?attr/colorPrimaryDark"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@android:color/background_dark"
+                android:background="@drawable/bg_level_stroke"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:textSize="@dimen/_8ssp"
+                android:fontFamily="@font/poppins_light"
+                android:paddingHorizontal="@dimen/_3sdp"
+                android:paddingVertical="@dimen/_1sdp"
+                android:id="@+id/levelTv"
+                android:text="Easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_3sdp"
+                android:id="@+id/materialTitleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/textColorTitle"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                android:gravity="center"
+                android:textAppearance="?attr/textAppearanceSubtitle2" />
+
+            <TextView
+                android:id="@+id/materialSubtitleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10ssp"
+                android:text="Subtitle"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/textColorTitle"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:textAppearance="?attr/textAppearanceBody2" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

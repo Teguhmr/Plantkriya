@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PlantKriya</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="plant">Plant</string>
+    <string name="kriya">Kriya</string>
+    <string name="name">Name</string>
+    <string name="dummy_name">Teguh Muhammad R</string>
+    <string name="email">Email</string>
+    <string name="dummy_email">dicoding@gmail.com</string>
+    <string name="phone_number">Num. Phone</string>
+    <string name="dummynumber">0929391903</string>
+    <string name="update">Update</string>
+    <string name="my_info">My Info</string>
+    <string name="change">Change</string>
+    <string name="search_note">Search note</string>
+    <string name="my_note">My Note</string>
+</resources>

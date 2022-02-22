@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    tools:context=".activity.submissionplant.UploadSubmissionActivity">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_rect01">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Upload Submission"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_margin="4dp"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="8dp">
+
+            <!-- LinearLayout goes here -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorAccent"/>
+
+
+                <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:elevation="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    app:c_border="true"
+                    app:c_border_color="@color/colorAccent"
+                    android:src="@drawable/pp1"
+                    app:c_border_width="1dp"/>
+
+
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_below="@id/profile_pic"
+                    android:hint="Title"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:drawableStart="@drawable/ic_title"
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_rect02"/>
+
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:hint="Description"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:layout_below="@id/tv_title"
+                    android:drawableStart="@drawable/ic_title"
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_rect02" />
+
+
+                <TextView
+                    android:id="@+id/tv_subTitle"
+                    android:hint="Subtitle"
+                    android:padding="10dp"
+                    android:layout_below="@id/tv_plant"
+                    android:drawableStart="@drawable/ic_substring"
+                    android:drawablePadding="5dp"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_rect02" />
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:hint="Category"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:layout_below="@id/tv_desc"
+                    android:drawableStart="@drawable/ic_category"
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_rect02"/>
+
+                <TextView
+                    android:id="@+id/tv_plant"
+                    android:hint="Kind"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:layout_below="@id/tv_category"
+                    android:drawableStart="@drawable/ic_category"
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_rect02"/>
+
+
+                <TextView
+                    android:id="@+id/txt_myprofile"
+                    android:layout_below="@+id/tv_subTitle"
+                    android:layout_margin="5dp"
+                    android:text="My Profile"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_below="@id/txt_myprofile"
+                    android:hint="Name"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:drawableStart="@drawable/ic_baseline_person_gray"
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_rect02"/>
+
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:hint="Email"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:layout_below="@id/tv_name"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_rect02" />
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:hint="Phone"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:layout_below="@id/tv_email"
+                    android:drawableStart="@drawable/ic_baseline_phone"
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_rect02" />
+
+                <TextView
+                    android:id="@+id/txt_mySubmission"
+                    android:layout_below="@+id/tv_phone"
+                    android:layout_margin="5dp"
+                    android:text="My Submission"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/image_submission"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:layout_below="@id/txt_mySubmission"
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginVertical="5dp"
+                    android:src="@drawable/ic_baseline_photo_library_24"
+                    android:scaleType="center"
+                    android:layout_marginHorizontal="40dp"
+                    android:background="@drawable/shape_rect04" />
+
+
+                <TextView
+                    android:id="@+id/txt_upload"
+                    android:layout_below="@+id/image_submission"
+                    android:layout_margin="5dp"
+                    android:text="Silahkan upload foto"
+                    android:textSize="10sp"
+                    android:paddingStart="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_minggu"
+                    android:hint="Minggu ke"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:drawableEnd="@drawable/ic_down"
+                    android:layout_below="@id/txt_upload"
+                    android:drawableStart="@drawable/ic_category"
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_rect02"/>
+
+                <TextView
+                    android:id="@+id/txt_lihat_contoh"
+                    android:layout_below="@+id/tv_minggu"
+                    android:layout_margin="5dp"
+                    android:text="Lihat Contoh"
+                    android:textSize="10sp"
+                    android:paddingStart="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <Button
+                    android:id="@+id/btn_upload_submission_fix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textSize="16sp"
+                    android:layout_margin="7dp"
+                    android:paddingBottom="7dp"
+                    android:layout_below="@id/txt_lihat_contoh"
+                    android:layout_centerHorizontal="true"
+                    android:text="Upload" />
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+</RelativeLayout>

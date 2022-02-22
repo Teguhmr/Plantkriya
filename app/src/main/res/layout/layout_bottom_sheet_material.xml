@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/bottomSheetContainerMaterial"
+    android:paddingHorizontal="16dp"
+    android:background="@drawable/bottom_sheet_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        android:text="Material" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textColorScreen"/>
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/material_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        app:c_border="true"
+        app:c_border_color="@color/colorAccent"
+        android:src="@drawable/pp1"
+        app:c_border_width="1dp"/>
+
+    <TextView
+        android:layout_gravity="start"
+        android:textColor="@android:color/background_dark"
+        android:background="@drawable/bg_level_stroke"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="5dp"
+        android:textSize="8sp"
+        android:fontFamily="@font/poppins_light"
+        android:paddingHorizontal="3dp"
+        android:paddingVertical="1dp"
+        android:id="@+id/levelTv"
+        android:text="Easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:text="Title" />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_light"
+        tools:text="Title" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorAccent"
+        android:text="Desc" />
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_light"
+        tools:text="Your desc" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorAccent"
+        android:text="Subtitle" />
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_light"
+        tools:text="Your subtitle" />
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:textSize="12sp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_update_stroke"
+        android:layout_gravity="center_horizontal"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:text="@string/change" />
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:textSize="12sp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_update_stroke"
+        android:layout_gravity="center_horizontal"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:text="Delete" />
+
+</LinearLayout>

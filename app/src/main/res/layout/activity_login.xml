@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.LoginActivity">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_rect01">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/overBox"
+        android:orientation="vertical"
+        android:elevation="3dp"
+        android:background="@color/colorOverBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon_key_recover"
+        android:background="@drawable/shape_circle01"
+        android:src="@drawable/ic_key_white"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="60dp"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:elevation="6dp"
+        android:layout_above="@id/recover_forgotPassword"
+        android:layout_marginBottom="-30dp"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:id="@+id/recover_forgotPassword"
+        android:orientation="vertical"
+        android:elevation="4dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/shape_rect03"
+        android:layout_centerInParent="true"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="RECOVER PASSWORD"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Silahkan masukkan email anda untuk mengganti kata sandi"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt1_email"
+            android:layout_margin="10dp"
+            android:layout_below="@id/icon_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_email_recover"
+                android:hint="Email"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_rect02"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnRecover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape_rect04"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_gravity="center_horizontal"
+                android:text="Recover"/>
+            <Button
+                android:id="@+id/cancel_recover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:layout_toStartOf="@id/btnRecover"
+                android:layout_toLeftOf="@id/btnRecover"
+                android:background="@drawable/shape_rect04"
+                style="@style/Widget.MaterialComponents.Button.TextButton"                android:layout_gravity="center_horizontal"
+                android:text="Cancel"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/icon_key"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_circle01"
+        android:src="@drawable/ic_key_white"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_marginBottom="40dp"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_email"
+        android:layout_margin="4dp"
+        android:layout_below="@id/icon_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_email"
+            android:hint="Email"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_rect02"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_password"
+        android:layout_below="@id/txt_email"
+        app:passwordToggleEnabled="true"
+        android:layout_marginHorizontal="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_password"
+            android:hint="Password"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_locked_padlock_"
+            android:drawablePadding="5dp"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_rect02"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Forgot Password?"
+        android:layout_below="@id/txt_password"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgot"
+        android:layout_centerHorizontal="true"
+        android:text="Login" />
+
+        <TextView
+            android:id="@+id/no_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="Not have account? Register" />
+
+    <ImageButton
+        android:id="@+id/announcement_imgBtn"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:background="@drawable/ic_baseline_announcement_24"
+        android:backgroundTint="@color/design_default_color_error"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/_5sdp"/>
+
+</RelativeLayout>

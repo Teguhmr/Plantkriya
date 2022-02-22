@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d6ce93</color>
+    <color name="colorPrimaryDark">#d6ce93</color>
+    <color name="colorAccent">#d6ce93</color>
+    <color name="colorMiddle">#efebce</color>
+    <color name="colorMiddle2">#d8a48f</color>
+    <color name="colorMiddle3">#bb8588</color>
+    <color name="colorMiddle4">#A86C70</color>
+
+    <color name="colorOverBox">#9AC8C8C8</color>
+    <color name="colorBackground">#8DD6CE93</color>
+    <color name="colorSubtitle">#7A9E9976</color>
+
+
+    <color name="textInputOutlineColor">#d6ce93</color>
+    <color name="textColorPrimary">#FFF</color>
+    <color name="textColorScreen">#80FFFFFF</color>
+    <color name="textColorScreenMenu">#707070</color>
+    <color name="textColorTitle">#7E7953</color>
+    <color name="productGridBackgroundColor">#FFFBFA</color>
+
+
+    <color name="bg_black">#000</color>
+    <color name="green_active">#64933F</color>
+    <color name="green_layout">#9DC57E</color>
+    <color name="blue_active">#1E88E5</color>
+    <color name="red_active">#B55555</color>
+    <color name="yellow">#FDBE3B</color>
+    <color name="default_inactive">#78909c</color>
+
+</resources>

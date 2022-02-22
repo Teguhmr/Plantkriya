@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/zoomview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kriyahuman"
+        app:layout_constraintTop_toTopOf="parent"
+        android:adjustViewBounds="true"/>
+
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/zoomview"
+        android:layout_height="36dp"
+        android:background="@color/colorAccent"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:text="Close" />
+</androidx.constraintlayout.widget.ConstraintLayout>
